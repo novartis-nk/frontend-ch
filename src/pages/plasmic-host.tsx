@@ -42,6 +42,7 @@ registerComponent(TikTokScroll, {
   name: "TikTokScroll",
   displayName: "TikTok Scroll",
   description: "A TikTok-style vertical scroll component",
+  importPath: "@/components/ui/TikTokScroll",
   props: {
     posts: {
       type: "array",
@@ -54,5 +55,4 @@ registerComponent(TikTokScroll, {
     },
   },
 });
-
 
