@@ -45,14 +45,14 @@ registerComponent(TikTokScroll, {
   props: {
     posts: {
       type: "array",
-      displayName: "Posts",
-      description: "Array of post objects",
+      description: "List of posts with image_link, description, desire",
     },
     initialIndex: {
       type: "number",
-      displayName: "Initial Index",
       defaultValue: 0,
+      description: "The initial post index to display",
     },
   },
 });
+
 
