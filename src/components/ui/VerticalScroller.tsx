@@ -1,9 +1,7 @@
 // File: /src/components/VerticalScroller.tsx
 
 import React, { useState, useEffect, useRef, Children, cloneElement, isValidElement } from 'react';
-// Make sure to create and import the corresponding CSS file
-import '../../styles/VerticalScroller.css';
-
+import '@/styles/VerticalScroller.css';
 interface VerticalScrollerProps {
   /**
    * The 'slides' prop will be a slot in Plasmic, accepting multiple child components.
