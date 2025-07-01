@@ -1,5 +1,5 @@
 import * as React from "react";
-import { TikTokScroll } from "@/components/TikTokScroll";
+import { TikTokScroll } from "@/components/ui/TikTokScroll";
 import {
   PlasmicCanvasHost,
   registerComponent,
