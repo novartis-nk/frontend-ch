@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, Children, cloneElement, isValidElement } from 'react';
 // Make sure to create and import the corresponding CSS file
-import './src/styles/VerticalScroller.css';
+import '../../styles/VerticalScroller.css';
 
 interface VerticalScrollerProps {
   /**
