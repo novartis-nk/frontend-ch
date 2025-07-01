@@ -1,0 +1,25 @@
+/* File: /src/components/VerticalScroller.css */
+
+.vertical-scroller-container {
+  /* This is the main container that will be sized in Plasmic.
+     Set its width and height to 100% of its parent in the studio. */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  outline: none; /* Remove the blue focus outline when clicked */
+}
+
+.vertical-scroller-wrapper {
+  /* This wrapper holds the absolute-positioned slides */
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Note: Individual slide styles are now applied directly in the component's code
+via `cloneElement`. This is because each child passed from Plasmic might be a 
+different component, and this method ensures the scrolling animation is
+applied correctly to whatever you drop in the slot. This CSS file just sets
+up the main container.
+*/
