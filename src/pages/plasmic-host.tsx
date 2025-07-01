@@ -1,11 +1,11 @@
 import * as React from "react";
-import { TikTokScroll } from "@/components/ui/TikTokScroll";
 import {
   PlasmicCanvasHost,
   registerComponent,
   registerGlobalContext,
 } from "@plasmicapp/react-web/lib/host";
 
+// --- Other component imports (keep these as they are) ---
 import { Fragment, fragmentMeta } from "@/fragment/fragment";
 import { GrowthBook, growthBookMeta } from "@/fragment/growthbook";
 import { DatePicker, datePickerMeta } from "@/fragment/components/date-picker";
@@ -20,10 +20,18 @@ import { Slider, sliderMeta } from "@/fragment/components/slider";
 import { Chart, chartMeta } from "@/fragment/components/chart";
 import { Textarea, textareaMeta } from "@/fragment/components/textarea";
 
+// 1. IMPORT YOUR NEW COMPONENT
+// Make sure the path is correct for your project structure.
+import { VerticalScroller } from "@/components/ui/VerticalScroller";
+import { TikTokScroll } from "@/components/ui/TikTokScroll";
+
+
+
 export default function PlasmicHost() {
   return <PlasmicCanvasHost />;
 }
 
+// --- Your existing registrations (keep these) ---
 registerGlobalContext(Fragment, fragmentMeta);
 registerGlobalContext(GrowthBook, growthBookMeta);
 registerGlobalContext(Splunk, splunkMeta);
@@ -37,6 +45,7 @@ registerComponent(Slider, sliderMeta);
 registerComponent(ApiRequest, apiRequestMeta);
 registerComponent(Chart, chartMeta);
 registerComponent(Textarea, textareaMeta);
+
 
 registerComponent(TikTokScroll, {
   name: "TikTokScroll",
@@ -53,6 +62,56 @@ registerComponent(TikTokScroll, {
       defaultValue: 0,
       description: "The initial post index to display",
     },
+  },
+});
+
+
+// 3. ADD THE NEW VerticalScroller REGISTRATION
+registerComponent(VerticalScroller, {
+  name: "VerticalScroller",
+  displayName: "Vertical Scroller",
+  description: "A container for creating a TikTok-style vertical feed.",
+  // Use the same import path as your import statement above
+  importPath: "@/components/ui/VerticalScroller",
+  props: {
+    slides: {
+      type: "slot",
+      description: "Drop your full-page slides in here. Each direct child will be one slide.",
+      // This provides a helpful starting point for the user.
+      defaultValue: {
+        type: 'vbox',
+        children: [
+          {
+            type: 'vbox',
+            styles: {
+              width: '100%',
+              height: '100vh',
+              justifyContent: 'center',
+              alignItems: 'center',
+              backgroundColor: '#f0f0f0'
+            },
+            children: {
+              type: 'text',
+              value: 'This is the first slide. Drag content here!'
+            }
+          },
+          {
+            type: 'vbox',
+            styles: {
+              width: '100%',
+              height: '100vh',
+              justifyContent: 'center',
+              alignItems: 'center',
+              backgroundColor: '#d9d9d9'
+            },
+            children: {
+              type: 'text',
+              value: 'This is the second slide. Drag content here!'
+            }
+          }
+        ]
+      }
+    }
   },
 });
 
