@@ -1,4 +1,5 @@
 import * as React from "react";
+import { TikTokScroll } from "@/components/TikTokScroll";
 import {
   PlasmicCanvasHost,
   registerComponent,
@@ -36,3 +37,22 @@ registerComponent(Slider, sliderMeta);
 registerComponent(ApiRequest, apiRequestMeta);
 registerComponent(Chart, chartMeta);
 registerComponent(Textarea, textareaMeta);
+
+registerComponent(TikTokScroll, {
+  name: "TikTokScroll",
+  displayName: "TikTok Scroll",
+  description: "A TikTok-style vertical scroll component",
+  props: {
+    posts: {
+      type: "array",
+      displayName: "Posts",
+      description: "Array of post objects",
+    },
+    initialIndex: {
+      type: "number",
+      displayName: "Initial Index",
+      defaultValue: 0,
+    },
+  },
+});
+
