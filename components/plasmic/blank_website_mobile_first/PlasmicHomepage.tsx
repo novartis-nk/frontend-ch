@@ -166,64 +166,132 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.verticalScroller}
             className={classNames("__wab_instance", sty.verticalScroller)}
             slides={
-              <div className={classNames(projectcss.all, sty.freeBox__znw0H)}>
-                <div className={classNames(projectcss.all, sty.freeBox__axmZs)}>
+              <React.Fragment>
+                <div className={classNames(projectcss.all, sty.freeBox__znw0H)}>
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__bAqqm
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__axmZs)}
                   >
-                    {"This is the first slide. Drag content here!"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__bAqqm
+                      )}
+                    >
+                      {"This is the first slide. Drag content here!"}
+                    </div>
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___4JXr7)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/b4B8C6833Ce1Be4A71E5B2942190BbaeJpg.jpg",
+                        fullWidth: 448,
+                        fullHeight: 899,
+                        aspectRatio: undefined
+                      }}
+                    />
                   </div>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___4JXr7)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blank_website_mobile_first/images/b4B8C6833Ce1Be4A71E5B2942190BbaeJpg.jpg",
-                      fullWidth: 448,
-                      fullHeight: 899,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__etv7U)}>
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__uqJid
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__etv7U)}
                   >
-                    {"This is the second slide. Drag content here!"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__uqJid
+                      )}
+                    >
+                      {"This is the second slide. Drag content here!"}
+                    </div>
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__wij9L)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/_5875381696491275654Jpg.jpg",
+                        fullWidth: 591,
+                        fullHeight: 1280,
+                        aspectRatio: undefined
+                      }}
+                    />
                   </div>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__wij9L)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blank_website_mobile_first/images/_5875381696491275654Jpg.jpg",
-                      fullWidth: 591,
-                      fullHeight: 1280,
-                      aspectRatio: undefined
-                    }}
-                  />
                 </div>
-              </div>
+                <div className={classNames(projectcss.all, sty.freeBox__tmS3X)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__q9Rp8)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__gu08
+                      )}
+                    >
+                      {"This is the first slide. Drag content here!"}
+                    </div>
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___4DdJb)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/b4B8C6833Ce1Be4A71E5B2942190BbaeJpg.jpg",
+                        fullWidth: 448,
+                        fullHeight: 899,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__y7A8O)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__py0Pw
+                      )}
+                    >
+                      {"This is the second slide. Drag content here!"}
+                    </div>
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__fUjYx)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/_5875381696491275654Jpg.jpg",
+                        fullWidth: 591,
+                        fullHeight: 1280,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                </div>
+              </React.Fragment>
             }
           />
         </div>
