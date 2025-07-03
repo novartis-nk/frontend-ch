@@ -5,6 +5,10 @@
     "scheme": "blackbox",
     "reactRuntime": "classic"
   },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
   "images": {
     "scheme": "public-files",
     "publicDir": "../public",
@@ -16,12 +20,185 @@
   },
   "srcDir": "components",
   "defaultPlasmicDir": "./plasmic",
-  "projects": [],
-  "globalVariants": {},
+  "projects": [
+    {
+      "projectId": "oa9D4nHQYQd1imVfib63bw",
+      "projectApiToken": "aTLdFeApEj07atWJmlVCODkdBq2hVUL9g3rGFDVGpG5h2POa76iiKshsrXgqzzAqiGpKsfsbCwLSwvThQXag",
+      "projectName": "Blank website (mobile-first)",
+      "version": "latest",
+      "cssFilePath": "plasmic/blank_website_mobile_first/plasmic.module.css",
+      "components": [
+        {
+          "id": "WsOz0wqKG792",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "oa9D4nHQYQd1imVfib63bw",
+          "renderModuleFilePath": "plasmic/blank_website_mobile_first/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../src/pages/home.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website_mobile_first/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/home"
+        },
+        {
+          "id": "81Z8tpFss2Q5",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "oa9D4nHQYQd1imVfib63bw",
+          "renderModuleFilePath": "plasmic/blank_website_mobile_first/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../src/pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website_mobile_first/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/new-page"
+        }
+      ],
+      "icons": [],
+      "images": [
+        {
+          "id": "MjMEfEWrhdhS",
+          "name": "b4b8c6833ce1be4a71e5b2942190bbae.jpg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/b4B8C6833Ce1Be4A71E5B2942190BbaeJpg.jpg"
+        },
+        {
+          "id": "x9XwzURJEAKg",
+          "name": "ChatGPT Image Apr 18, 2025, 12_26_22 PM.png",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/chatGptImageApr182025122622PmPng.png"
+        },
+        {
+          "id": "aXU5rLVQ31V7",
+          "name": "5875381696491275654.jpg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/_5875381696491275654Jpg.jpg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/blank_website_mobile_first/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "gjq0bbcMySW8",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "fJmKZ0xl8E9q",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "Ui12eWmo0iQN",
+          "name": "DatePicker",
+          "displayName": "DatePicker",
+          "componentImportPath": "@/fragment/components/date-picker"
+        },
+        {
+          "id": "4lPH1WGiqyx4",
+          "name": "TimePicker",
+          "displayName": "TimePicker",
+          "componentImportPath": "@/fragment/components/time-picker"
+        },
+        {
+          "id": "sqMwAcQPdJ4N",
+          "name": "Popover",
+          "displayName": "Popover",
+          "componentImportPath": "@/fragment/components/popover"
+        },
+        {
+          "id": "IchQ0oCoiuAF",
+          "name": "Select",
+          "displayName": "Select",
+          "componentImportPath": "@/fragment/components/select"
+        },
+        {
+          "id": "-Wst6j30UAOg",
+          "name": "Input",
+          "displayName": "Input",
+          "componentImportPath": "@/fragment/components/input"
+        },
+        {
+          "id": "4S62Hg3ZoU7M",
+          "name": "Switch",
+          "displayName": "Switch",
+          "componentImportPath": "@/fragment/components/switch"
+        },
+        {
+          "id": "zzc0HoABlLpp",
+          "name": "Slider",
+          "displayName": "Slider",
+          "componentImportPath": "@/fragment/components/slider"
+        },
+        {
+          "id": "TiYw7ZOjNwcA",
+          "name": "ApiRequest",
+          "displayName": "ApiRequest",
+          "componentImportPath": "@/fragment/components/api-request"
+        },
+        {
+          "id": "kRdvhV5Wq7-_",
+          "name": "Chart",
+          "displayName": "Chart",
+          "componentImportPath": "@/fragment/components/chart"
+        },
+        {
+          "id": "l5-YQWira_-Y",
+          "name": "Textarea",
+          "displayName": "Textarea",
+          "componentImportPath": "@/fragment/components/textarea"
+        },
+        {
+          "id": "k0-UJNv3HCPe",
+          "name": "Fragment",
+          "displayName": "Fragment",
+          "componentImportPath": "@/fragment/fragment"
+        },
+        {
+          "id": "_XMoc7O-cDeo",
+          "name": "GrowthBook",
+          "displayName": "GrowthBook",
+          "componentImportPath": "@/fragment/growthbook"
+        },
+        {
+          "id": "ZBUtkNnp63EA",
+          "name": "Splunk",
+          "displayName": "Splunk",
+          "componentImportPath": "@/fragment/splunk"
+        },
+        {
+          "id": "PLhV7AJu4Wgx",
+          "name": "TikTokScroll",
+          "displayName": "TikTokScroll",
+          "componentImportPath": "@/components/ui/TikTokScroll"
+        },
+        {
+          "id": "Ndcz_uHAdtQI",
+          "name": "VerticalScroller",
+          "displayName": "VerticalScroller",
+          "componentImportPath": "@/components/ui/VerticalScroller"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "orpGuBhBWpnG",
+        "name": "Screen",
+        "projectId": "oa9D4nHQYQd1imVfib63bw",
+        "contextFilePath": "plasmic/blank_website_mobile_first/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
   "wrapPagesWithGlobalContexts": true,
   "nextjsConfig": {
     "pagesDir": "../src/pages"
   },
-  "cliVersion": "0.1.330",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.330/dist/plasmic.schema.json"
+  "cliVersion": "0.1.340",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.340/dist/plasmic.schema.json"
 }

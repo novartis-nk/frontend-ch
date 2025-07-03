@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@growthbook/growthbook-react": "^1.0.0",
-    "@plasmicapp/cli": "^0.1.330",
+    "@plasmicapp/cli": "^0.1.340",
     "@plasmicapp/host": "^1.0.196",
     "@plasmicapp/react-web": "^0.2.337",
     "@radix-ui/react-popover": "^1.0.7",
