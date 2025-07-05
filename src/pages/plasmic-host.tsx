@@ -20,10 +20,15 @@ import { Slider, sliderMeta } from "@/fragment/components/slider";
 import { Chart, chartMeta } from "@/fragment/components/chart";
 import { Textarea, textareaMeta } from "@/fragment/components/textarea";
 
-// 1. IMPORT YOUR NEW COMPONENT
-// Make sure the path is correct for your project structure.
+
+// 1. IMPORT YOUR NEW COMPONENTS & METADATA
 import { VerticalScroller } from "@/components/ui/VerticalScroller";
+import { verticalScrollerMeta } from "@/components/ui/verticalScrollerMeta";
+
 import { TikTokScroll } from "@/components/ui/TikTokScroll";
+import { tikTokScrollMeta } from "@/components/ui/tikTokScrollMeta";
+
+
 
 
 
@@ -45,5 +50,7 @@ registerComponent(Slider, sliderMeta);
 registerComponent(ApiRequest, apiRequestMeta);
 registerComponent(Chart, chartMeta);
 registerComponent(Textarea, textareaMeta);
+registerComponent(VerticalScroller, verticalScrollerMeta);
+registerComponent(TikTokScroll, tikTokScrollMeta);
 
 
